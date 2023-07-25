@@ -19,7 +19,7 @@ As someone passionate about web development, I have created this repository to c
 
 I plan to work with a variety of technologies in this repository, including but not limited to:
 
-- HTML5 and CSS3
+- HTML and CSS
 - JavaScript and ES6+
 - Front-end frameworks (e.g., React, Angular, Vue.js)
 - Back-end frameworks (e.g., Node.js, Django, Flask)
