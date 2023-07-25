@@ -1,6 +1,6 @@
 # Web Development Practice Repository
 
-This repository serves as a personal playground for practicing, learning, and experimenting with web development. As an aspiring web developer, I will use this space to explore various technologies, frameworks, and concepts to enhance my skills and understanding of web development.
+This repository serves as a personal playground for practicing, learning, and experimenting with web development. As an aspiring softwere developer, I will use this space to explore various technologies, frameworks, and concepts to enhance my skills and understanding of web development.
 
 ## Table of Contents
 
