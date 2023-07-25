@@ -1,4 +1,4 @@
-# Beautiful Login Form with Background Image - README
+# Basic Login Form with Background Image - README
 
 This repository contains a basic login form with a background image, created using HTML and CSS. The login form is designed with visual appeal and includes customizations for easy color and button style modifications. Below, you will find instructions on how to edit or change the button style, colors, background image, icons, and other elements in the login form.
 
