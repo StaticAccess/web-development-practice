@@ -10,6 +10,7 @@
   
 </head>
 <body>
+
   <div class="container">
     <header>
       <h1>Music Streamer</h1>
@@ -62,5 +63,15 @@
       <p>&copy; 2023 Music Streamer. All rights reserved.</p>
     </footer>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton = document.querySelector(".mobile-menu-icon");
+      const menuList = document.querySelector(".menu");
+  
+      menuButton.addEventListener("click", function () {
+        menuList.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
