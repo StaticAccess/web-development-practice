@@ -1,6 +1,13 @@
-body {
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     background-color: #f5f5f5;
   }
   
@@ -134,5 +141,37 @@ body {
   
   footer p {
     font-size: 14px;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      justify-content: center;
+      margin-top: 10px;
+    }
+    main .hero {
+      padding: 100px 0;
+    }
+    main .hero h2 {
+      font-size: 36px;
+    }
+    main .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    main button {
+      font-size: 18px;
+    }
+    .featured-playlists {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
   }
   
