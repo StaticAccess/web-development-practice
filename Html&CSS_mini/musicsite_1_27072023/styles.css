@@ -48,6 +48,13 @@
     font-weight: bold;
   }
   
+  .mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
   main {
     padding: 20px 0;
   }
@@ -172,6 +179,26 @@
     .featured-playlists {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #FFF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .menu.active {
+      display: flex;
+    }
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .mobile-menu-icon {
+      display: block;
     }
   }
   
