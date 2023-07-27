@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Streamer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <title>Music Streamer</title>
+  
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Music Streamer</h1>
       <nav>
-        <ul>
+        <ul class="menu">
           <li class="active">Home</li>
           <li>Discover</li>
           <li>Genres</li>
           <li>Playlists</li>
           <li>My Library</li>
         </ul>
+        <div class="mobile-menu-icon">&#9776;</div>
       </nav>
     </header>
 
@@ -29,9 +32,28 @@
           <button>Get Started</button>
         </div>
       </section>
-
       <section class="featured-playlists">
-        <!-- Playlist cards go here -->
+        <div class="playlist-card">
+          <i class="fas fa-music playlist-icon"></i>
+          <img src="playlist-1.jpg" alt="Playlist 1">
+          <h3>Summer Vibes</h3>
+        </div>
+        <div class="playlist-card">
+          <i class="fas fa-headphones-alt playlist-icon"></i>
+          <img src="playlist-2.jpg" alt="Playlist 2">
+          <h3>Chill Beats</h3>
+        </div>
+        <div class="playlist-card">
+          <i class="fas fa-dumbbell playlist-icon"></i>
+          <img src="playlist-3.jpg" alt="Playlist 3">
+          <h3>Workout Mix</h3>
+        </div>
+        <div class="playlist-card">
+          <i class="fas fa-compact-disc playlist-icon"></i>
+          <img src="playlist-4.jpg" alt="Playlist 4">
+          <h3>Throwback Hits</h3>
+        </div>
+        <!-- Add more playlist cards here -->
       </section>
     </main>
 

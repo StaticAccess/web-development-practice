@@ -108,6 +108,7 @@
   }
   
   .playlist-card {
+    position: relative;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -121,12 +122,22 @@
     object-fit: cover;
   }
   
+  .playlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #FFF;
+    background-color: #FF5733;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
   .playlist-card h3 {
     font-size: 20px;
     padding: 20px;
     margin: 0;
-    background-color: #FF5733;
-    color: #FFF;
+    color: #333;
     text-align: center;
     transition: background-color 0.2s ease;
   }
@@ -136,7 +147,8 @@
   }
   
   .playlist-card:hover h3 {
-    background-color: #E64C00;
+    background-color: #FF5733;
+    color: #FFF;
   }
   
   footer {
