@@ -192,19 +192,24 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-        border-radius: 8px;
-        padding: 10px 0;
-        width: 200px;
-      }
+    
+     .menu {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 8px;
+            padding: 10px 0;
+            width: 200px;
+          }
+          
+    
+          
       
       .menu li {
         margin-bottom: 10px;
@@ -242,13 +247,7 @@
         }
       }
       
-    .menu.active {
-      display: flex;
-    }
-    .menu li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
+    
     .mobile-menu-icon {
       display: block;
     }
