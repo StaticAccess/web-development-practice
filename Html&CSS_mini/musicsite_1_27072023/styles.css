@@ -62,7 +62,7 @@
   .hero {
     text-align: center;
     color: #FFF;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('hero-background.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./hero-background.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -251,4 +251,55 @@
       display: block;
     }
   }
+  
+
+/*styles for the slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  z-index: -1;
+  animation: fade 12s infinite;
+}
+
+.image1 {
+  background-image: url('hero-background-1.jpg');
+  animation-delay: 0s;
+  z-index: 1;
+}
+
+.image2 {
+  background-image: url('hero-background-2.jpg');
+  animation-delay: 4s;
+}
+
+.image3 {
+  background-image: url('hero-background-3.jpg');
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+    z-index: -1;
+  }
+  20%, 80% {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
   
