@@ -40,3 +40,10 @@ p{
     line-height: 1.8rem;
 
 }
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+/*do above in every website as pratice*/
+
