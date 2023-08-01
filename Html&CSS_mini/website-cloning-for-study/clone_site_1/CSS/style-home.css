@@ -58,4 +58,16 @@ a{
 .container {
     max-width:1180px ;
      margin-inline: auto;
+     padding-inline: var(--padding-inline-section);
+
+}
+.top-banner {
+  background-color: #4fb3d4;
+  background-image:url(../ASSETS/IMG/asset\ 32.png);
+}
+
+.banner-text{
+    color:white;
+    padding: 15px 30px;
+    text-align:center ;
 }
