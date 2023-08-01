@@ -1,3 +1,4 @@
+
 /*for foonts*/
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
@@ -48,3 +49,12 @@ a{
 /*do above in every website as pratice*/
 
 /*Utility class*/
+
+.small-bold-text{
+    font-size:1rem ;
+    font-weight: 700;
+}
+
+.container {
+    max-width:1180px ;
+}
