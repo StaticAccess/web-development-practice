@@ -64,8 +64,9 @@ a{
 .top-banner {
   background-color: #4fb3d4;
   background-image:url(../ASSETS/IMG/asset\ 32.png);
+  background-size:300px ;
 }
-
+ 
 .banner-text{
     color:white;
     padding: 15px 30px;
