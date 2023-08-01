@@ -57,4 +57,5 @@ a{
 
 .container {
     max-width:1180px ;
+     margin-inline: auto;
 }
