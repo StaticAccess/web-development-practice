@@ -70,6 +70,12 @@ ul{
     display: flex;
     align-items:center
 }
+.hover-links {
+    color:var(--primary-text-color);
+}
+.hover-links:hover {
+    color:var(--accent-color);
+}
 
 /*for top banner*/
 .top-banner {
@@ -90,5 +96,13 @@ margin-top: 20px;
 }
 .company-logo img{
     width:200px ;
+}
+.nav-links{
+    flex-basis: 730px;
+    
+}
+.nav-links ul{
+    justify-content:end;
+    gap: 40px;
 }
 
