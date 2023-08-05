@@ -1,73 +1,48 @@
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.nucleus {
+  width: 30px;
+  height: 30px;
+  background-color: #FF5733;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+}
+
+.electron {
+  width: 10px;
+  height: 10px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  animation: electronOrbit linear infinite;
+}
+
+@keyframes electronOrbit {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
   }
-  
-  .nucleus {
-    width: 30px;
-    height: 30px;
-    background-color: #FF5733;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
   }
-  
-  .orbit {
-    width: 200px;
-    height: 200px;
-    border: 2px dashed #999;
-    border-radius: 50%;
-    position: absolute;
-    top: calc(50% - 100px);
-    left: calc(50% - 100px);
-    animation: orbitAnimation linear infinite;
-  }
-  
-  .electron {
-    width: 10px;
-    height: 10px;
-    background-color: #3498db;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform-origin: 0 100px; /* Move the pivot point to the top of the orbit */
-  }
-  
-  @keyframes orbitAnimation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  /* Define the positions for each electron */
-  .orbit-1 .electron-1 {
-    animation: electronOrbit 5s linear infinite;
-  }
-  
-  .orbit-2 .electron-2 {
-    animation: electronOrbit 4s linear infinite;
-  }
-  
-  .orbit-3 .electron-3 {
-    animation: electronOrbit 3s linear infinite;
-  }
-  
-  /* Define the positions for the electrons in their orbits */
-  @keyframes electronOrbit {
-    0% {
-      transform: rotate(0deg) translateX(100px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translateX(100px) rotate(-360deg);
-    }
-  }
-  
+}
+
+.electron-1 {
+  animation-duration: 5s;
+}
+
+.electron-2 {
+  animation-duration: 4s;
+}
+
+.electron-3 {
+  animation-duration: 3s;
+}
