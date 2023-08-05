@@ -1,7 +1,7 @@
 
 /*for foonts*/
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -70,12 +70,40 @@ ul{
     display: flex;
     align-items:center
 }
+/*hover and trans*/
 .hover-links {
     color:var(--primary-text-color);
+    transition: 0.2s ease-out;
 }
 .hover-links:hover {
     color:var(--accent-color);
 }
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight:500 ;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2sec ease-out;
+
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color:var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color:var(--accent-color) !important;
+}
+
 
 /*for top banner*/
 .top-banner {
@@ -95,7 +123,7 @@ justify-content: space-between;
 margin-top: 20px;
 }
 .company-logo img{
-    width:200px ;
+    width:180px ;
 }
 .nav-links{
     flex-basis: 730px;
@@ -103,6 +131,34 @@ margin-top: 20px;
 }
 .nav-links ul{
     justify-content:end;
-    gap: 40px;
+    gap: 25px;
+}
+.titelcontainer{
+    align-items: center;
+    flex: 1,0,auto;
+    
 }
 
+
+.becomeatester-text{
+    color: var(--primary-text-color);
+    text-align: center;
+    text-transform: none;
+    margin-left: 6px;
+    text-decoration:none ;
+    display: block;
+
+}
+.become-a-tester-button {
+    float: none;
+    background-image: url(../ASSETS/IMG/asset\ 33.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 151px 33px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    padding: 8px 16px 8px 15px;
+    text-decoration: none;
+    display: flex;
+}
